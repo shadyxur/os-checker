@@ -30,11 +30,13 @@ Clone the repository (or save the file):
 Bash
 
 git clone https://github.com/shadyxur/os-check.git 
+
 cd os-check
 
 Alternatively, if you just have the os-check.rs file, navigate to its directory.
 
 2.2. Compile the code:
+
 Open your terminal or command prompt in the directory containing os-check.rs and run:
 
 Bash
