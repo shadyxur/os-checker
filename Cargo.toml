@@ -1,7 +1,7 @@
 [package]
 name = "os-check"
 version = "0.1.0"
-edition = "2025"
+edition = "2024"
 authors = ["DK <twnk24@protonmail.com>"] 
 description = "A simple Rust application to check what OS does your computer run on" 
 license = "MIT OR Apache-2.0"
