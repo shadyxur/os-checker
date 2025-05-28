@@ -7,3 +7,7 @@ description = "A simple Rust application to check what OS does your computer run
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+
+[[bin]]
+name = "os-check" 
+path = "src/os-check.rs" 
