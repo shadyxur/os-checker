@@ -16,10 +16,15 @@ If uname fails or indicates an unknown Unix-like OS, the program proceeds to che
 For Windows detection, the program executes wmic os get Caption,Version,BuildNumber /value to retrieve specific OS details like the caption (e.g., "Microsoft Windows 10 Pro"), version number, and build number.
 
 # Getting Started:
+
 1. Prerequisites
+
 Rust and Cargo: You need to have Rust and its package manager, Cargo, installed on your system. If you don't have them, you can install them by following the instructions on the official Rust website.
+
 2. Building and Running
+
 Clone the repository (or save the file):
+
 2.1. If you're using Git, clone your project:
 
 Bash
