@@ -23,42 +23,32 @@ Rust and Cargo: You need to have Rust and its package manager, Cargo, installed 
 
 2. Building and Running
 
-Clone the repository (or save the file):
+Clone the repository (or save the file)
 
-2.1. If you're using Git, clone your project:
+2.1. If you're using Git, clone the project:
 
-Bash
+```git clone https://github.com/shadyxur/os-check.git```
 
-git clone https://github.com/shadyxur/os-check.git 
-
-cd os-check
-
-Alternatively, if you just have the os-check.rs file, navigate to its directory.
+Alternatively, if you just have the ```os-check.rs``` file, navigate to its directory.
 
 2.2. Compile the code:
 
 Open your terminal or command prompt in the directory containing os-check.rs and run:
 
-Bash
+```cargo build --release```
 
-cargo build --release
-
-The --release flag compiles the code with optimizations, resulting in a faster executable.
+The ```--release``` flag compiles the code with optimizations, resulting in a faster executable.
 
 Run the executable:
 After successful compilation, you can run the program. The executable will be located in the target/release/ directory.
 
 2.3. On Linux/macOS:
 
-Bash
-
-./target/release/os-check
+```./target/release/os-check```
 
 2.4. On Windows (in Command Prompt or PowerShell):
 
-Bash
-
-.\target\release\os-check.exe
+```.\target\release\os-check.exe```
 
 The program will then output the detected OS and its version information.
 
