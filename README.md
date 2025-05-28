@@ -2,18 +2,18 @@
 This Rust program attempts to detect the operating system and its version details by executing native system commands. It provides specific information for Linux, macOS, and Windows.
 
 # Features:
-Linux Detection: Uses uname -s -r to identify Linux and display its kernel version.
-macOS Detection: Uses uname -s -r for initial detection and sw_vers for detailed version information.
-Windows Detection: Uses wmic os get Caption,Version,BuildNumber /value to retrieve comprehensive OS details.
-Command-Based: Determines OS by executing system commands, providing a potentially more detailed or alternative approach compared to compile-time or std::env::consts::OS checks.
+Linux Detection: Uses ```uname -s -r``` to identify Linux and display its kernel version.
+macOS Detection: Uses ```uname -s -r``` for initial detection and ```sw_vers``` for detailed version information.
+Windows Detection: Uses ```wmic os get Caption,Version,BuildNumber /value``` to retrieve comprehensive OS details.
+Command-Based: Determines OS by executing system commands.
 
 # How it Works:
-The program first attempts to run uname -s -r, which is a common command on Unix-like systems (Linux, macOS, etc.) to get the kernel name and release.
+The program first attempts to run ```uname -s -r```, which is a common command on Unix-like systems (Linux, macOS, etc.) to get the kernel name and release.
 
-If uname indicates "Linux", it prints the detected OS and version.
-If uname indicates "Darwin" (macOS), it then executes sw_vers to get more detailed macOS version information.
-If uname fails or indicates an unknown Unix-like OS, the program proceeds to check for Windows.
-For Windows detection, the program executes wmic os get Caption,Version,BuildNumber /value to retrieve specific OS details like the caption (e.g., "Microsoft Windows 10 Pro"), version number, and build number.
+If ```uname``` indicates "Linux", it prints the detected OS and version.
+If ```uname``` indicates "Darwin" (macOS), it then executes ```sw_vers``` to get more detailed macOS version information.
+If ```uname``` fails or indicates an unknown Unix-like OS, the program proceeds to check for Windows.
+For Windows detection, the program executes ```wmic os get Caption,Version,BuildNumber /value``` to retrieve specific OS details like the caption (e.g., "Microsoft Windows 10 Pro"), version number, and build number.
 
 # Getting Started:
 
